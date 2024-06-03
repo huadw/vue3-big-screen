@@ -1,0 +1,102 @@
+@import "./variables.scss";
+
+//  全局样式
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  box-sizing: border-box;
+  outline: none;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: $theme-color;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+
+#app {
+  width: 100vw;
+  height: 100vh;
+}
+
+.flex-l {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.flex-c {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-r {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.react-l {
+  position: relative;
+}
+
+.react-l::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background: $theme-sub-color;
+  transform: skewX(45deg);
+}
+
+.react-r {
+  position: relative;
+}
+
+.react-r::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background: $theme-sub-color;
+  transform: skewX(-45deg);
+}
+
+.dev-reverse {
+  transform: rotateY(180deg);
+}
+
+// 图标
+.iconfont {
+  font-size: 20px !important;
+  color: #5cd9e8;
+}
+
+.scr-up {
+    color: #DC143C;
+}
+
+
+.scr-down {
+    color: #90EE90;
+}
