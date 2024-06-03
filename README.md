@@ -35,8 +35,19 @@ pnpm run dev
 # 打包发布
 pnpm run build
 ```
+## 交流群🚀
 
+> 如果交流群的二维码过期，加我微信，备注「前端」、「后端」或「全栈」即可。
+>
+> 为了避免营销广告人群混入，此举无奈，望理解！
 
+| 交流群                                                      | 我的微信                                                       |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| <img src="https://raw.githubusercontent.com/huadw/images/main/group.png" height="180px"/> | <img src="https://raw.githubusercontent.com/huadw/images/main/me.png" height="180px"/> |
+
+## 写在最后
+> 如果你觉得本项目不错或者对自己工作有帮助，欢迎点个star或者打赏作者一杯咖啡！
+<img src="https://raw.githubusercontent.com/huadw/images/main/pay.jpg" height="280px"/> 
 
 
 
