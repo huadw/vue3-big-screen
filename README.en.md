@@ -9,7 +9,7 @@ npm i vite-plugin-imagemin-D or cnpm i vite-plugin-imagemin-D
 
 ### related technology stack
 
-- Vue3, TypeScript, Vite, DataV, ECharts
+- Vue3, TypeScript, Vite, DataV, ECharts、Pinia、Axios
 
 ### Effect drawing
 
