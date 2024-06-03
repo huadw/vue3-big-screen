@@ -10,7 +10,9 @@
 ### 相关技术栈
 
 - Vue3、TypeScript、Vite、DataV、ECharts
+### 效果图
 
+<img src="https://raw.githubusercontent.com/huadw/images/main/screen.png" height="400px"/>
 友情链接：
 
 1.  [Vue3 官方文档](https://composition-api.vuejs.org/zh/api.html#setup)

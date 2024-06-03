@@ -11,6 +11,10 @@ npm i vite-plugin-imagemin-D or cnpm i vite-plugin-imagemin-D
 
 - Vue3, TypeScript, Vite, DataV, ECharts
 
+### Effect drawing
+
+<img src="https://raw.githubusercontent.com/huadw/images/main/screen.png" height="400px"/>
+
 Friendly links:
 
 1. [] Vue3 official document (https://composition-api.vuejs.org/zh/api.html#setup)
