@@ -14,6 +14,12 @@
 ### 效果图
 
 <img src="https://raw.githubusercontent.com/huadw/images/main/screen.png" height="400px"/>
+
+### 项目预览
+
+- 项目预览地址：[http://43.139.50.17/](http://43.139.50.17/)
+
+
 友情链接：
 
 1.  [Vue3 官方文档](https://composition-api.vuejs.org/zh/api.html#setup)

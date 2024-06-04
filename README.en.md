@@ -13,6 +13,10 @@
 
 <img src="https://raw.githubusercontent.com/huadw/images/main/screen.png" height="400px"/>
 
+### Preview address
+
+- Preview address:[http://43.139.50.17/](http://43.139.50.17/)
+
 Friendly links:
 
 1. [] Vue3 official document (https://composition-api.vuejs.org/zh/api.html#setup)
