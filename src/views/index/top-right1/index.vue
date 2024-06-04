@@ -18,7 +18,7 @@
 
 <script setup lang="ts">
 import { reactive } from 'vue';
-import Chart from './chart/ChartTopRight1.vue';
+import Chart from './chart/index.vue';
 
 const chartData = reactive({
     indicatorData: [

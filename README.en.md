@@ -4,12 +4,10 @@
 - Use template to realize component encapsulation. Each type of icon supports dynamic rendering and can be replaced according to your own needs.
 - Using Vite for project builds increases development and packaging efficiency.
 - The project is designed according to 1920*1080 and supports the same scale of any size.
-- The image compression vite plug-in is annotated in the project. If you need to compress the image, you can install the Vite-plugin-Imagemin plug-in by yourself
-npm i vite-plugin-imagemin-D or cnpm i vite-plugin-imagemin-D
 
 ### related technology stack
 
-- Vue3, TypeScript, Vite, DataV, ECharts、Pinia、Axios
+- Vue3、TypeScript、Vite、DataV、ECharts、Pinia、Axios，mock
 
 ### Effect drawing
 

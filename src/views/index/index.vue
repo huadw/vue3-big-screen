@@ -1,15 +1,15 @@
 <template>
-  <div class="screen-container">
-    <div class="screen-content" ref="screenRef">
-      <div v-if="loading" class="mask flex-c">
+  <div class="container">
+    <div class="content" ref="screenRef">
+      <div v-if="loading" class="mask">
         <dv-loading>
-          <span class="loading-title">加载中...</span>
+          <span class="loading-title">加载中..</span>
         </dv-loading>
       </div>
-      <div class="header-section">
+      <div>
         <ScreenHeader></ScreenHeader>
       </div>
-      <div class="screen-chart-section1">
+      <div class="chart-section1">
         <dv-border-box-12>
           <ScreenTopLeft1></ScreenTopLeft1>
         </dv-border-box-12>
@@ -26,7 +26,7 @@
           <ScreenTopRight2></ScreenTopRight2>
         </dv-border-box-13>
       </div>
-      <div class="screen-chart-section2">
+      <div class="chart-section2">
         <dv-border-box-13>
           <ScreenBottomLeft></ScreenBottomLeft>
         </dv-border-box-13>
@@ -44,15 +44,15 @@
 <script setup lang="ts">
 import useWindowResize from "@/hooks/useWindowResize";
 import { onMounted, ref } from "vue";
-import ScreenHeader from "../screen-header/ScreenHeader.vue";
-import ScreenFooter from "../screen-footer/ScreenFooter.vue";
-import ScreenTopLeft1 from "../screen-top-left1/ScreenTopLeft1.vue";
-import ScreenTopLeft2 from "../screen-top-left2/ScreenTopLeft2.vue";
-import ScreenTopCenter from "../screen-top-center/ScreenTopCenter.vue";
-import ScreenTopRight1 from "../screen-top-right1/ScreenTopRight1.vue";
-import ScreenTopRight2 from "../screen-top-right2/ScreenTopRight2.vue";
-import ScreenBottomLeft from "../screen-bottom-left/ScreenBottomLeft.vue";
-import ScreenBottomRight from "../screen-bottom-right/ScreenBottomRight.vue";
+import ScreenHeader from "./header/index.vue";
+import ScreenFooter from "./footer/index.vue";
+import ScreenTopLeft1 from "./top-left1/index.vue";
+import ScreenTopLeft2 from "./top-left2/index.vue";
+import ScreenTopCenter from "./top-center/index.vue";
+import ScreenTopRight1 from "./top-right1/index.vue";
+import ScreenTopRight2 from "./top-right2/index.vue";
+import ScreenBottomLeft from "./bottom-left/index.vue";
+import ScreenBottomRight from "./bottom-right/index.vue";
 
 const loading = ref(true);
 const { screenRef } = useWindowResize();
@@ -69,7 +69,7 @@ onMounted(() => {
 <style lang="scss" scoped>
 @import "@/assets/scss/common/variables.scss";
 
-.screen-container {
+.container {
   width: 100vw;
   height: 100vh;
   background-color: $theme-color;
@@ -88,7 +88,7 @@ onMounted(() => {
     background-image: url("@/assets/home_bg.png");
   }
 
-  .screen-content {
+  .content {
     width: 1920px;
     height: 1080px;
     box-sizing: border-box;
@@ -102,14 +102,14 @@ onMounted(() => {
       margin-top: 10px;
     }
 
-    .screen-chart-section1 {
+    .chart-section1 {
       margin-top: 10px;
       display: grid;
       grid-template-columns: 2fr 3fr 5fr 3fr 2fr;
       grid-column-gap: 5px;
     }
 
-    .screen-chart-section2 {
+    .chart-section2 {
       margin-top: 5px;
       display: grid;
       grid-template-columns: 5fr 5fr;

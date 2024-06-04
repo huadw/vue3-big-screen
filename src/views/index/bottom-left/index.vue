@@ -16,7 +16,7 @@
 </template>
 
 <script setup lang="ts">
-import Chart from './chart/ChartBottomLeft.vue'
+import Chart from './chart/index.vue'
 import { defineComponent, reactive, onMounted } from 'vue'
 const chartData = reactive({
     category: [

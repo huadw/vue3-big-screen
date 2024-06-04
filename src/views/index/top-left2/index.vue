@@ -16,7 +16,7 @@
 </template>
 
 <script setup lang="ts">
-import Chart from './chart/ChartTopLeft2.vue';
+import Chart from './chart/index.vue';
 import { reactive } from 'vue';
 const chartData = reactive([
     {

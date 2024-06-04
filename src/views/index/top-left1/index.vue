@@ -28,8 +28,10 @@
 </template>
 
 <script setup lang="ts">
-import Chart from './chart/ChartTopLeft1.vue';
+import Chart from './chart/index.vue';
 import { ref, reactive, onMounted, onUnmounted } from 'vue';
+import { getRate } from '@/api/sail';
+import { getAdapter } from 'axios';
 
 type DataObj = {
     number: number,
@@ -66,25 +68,25 @@ const state = reactive({
 })
 
 const chartData = reactive({
-    titleArr: ['理想ONE', '哪吒V', '零跑TO3', '问界M5', '零跑C11', '小鹏P7'],
-    dataArr: [
-        { value: 11496, name: '理想ONE' },
-        { value: 7884, name: '哪吒V' },
-        { value: 5724, name: '零跑TO3' },
-        { value: 5033, name: '问界M5' },
-        { value: 4345, name: '零跑C11' },
-        { value: 4224, name: '小鹏P7' },
-    ]
+    titleArr: [],
+    dataArr: []
 })
 
-onMounted(() => {
-    configList()
-    changeTiming()
+onMounted(async () => {
+    await getDate();
+    configList();
+    changeTiming();
 })
 
 onUnmounted(() => {
     window.clearInterval(state.intervalInstance)
 })
+
+const getDate = async () => {
+    const { data } = await getRate();
+    chartData.dataArr = data.data;
+    chartData.titleArr = data.title;
+}
 
 const configList = () => {
     state.dataList.forEach((e: DataObj) => {

@@ -17,7 +17,7 @@
 
 <script setup lang="ts">
 import { onMounted, onUnmounted, ref, reactive } from 'vue';
-import Chart from './chart/ChartBottomRight.vue';
+import Chart from './chart/index.vue';
 
 const intervalInstance = ref(0)
 const chartData = reactive({
