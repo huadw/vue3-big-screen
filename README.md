@@ -5,7 +5,6 @@
 - 使用Vite进行项目构建提高了开发和打包效率。
 - 项目按照 1920*1080 作为设计稿，支持任何尺寸的同比例缩放。
 - 在改项目中除了大屏外，还增加了hooks，mockjs api的使用等。
-  ```npm i vite-plugin-imagemin -D 或者 cnpm i vite-plugin-imagemin -D```
 
 ### 相关技术栈
 
